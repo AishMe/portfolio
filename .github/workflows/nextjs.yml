@@ -91,3 +91,17 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # Create env file
+  create-envfile:
+ 
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - name: Make envfile
+      uses: SpicyPizza/create-envfile@v2.0
+      with:
+        envkey_DEBUG: false
+        envkey_RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+        envkey_FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
+        file_name: .env.local
