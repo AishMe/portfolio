@@ -9,12 +9,12 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
+        <li>Machine Learning</li>
+        <li>Deep Learning</li>
+        <li>Artificial Intelligence</li>
+        <li>NextJS</li>
+        <li>Pytorch, Tensorflow</li>
+        <li>Python</li>
       </ul>
     ),
   },
@@ -23,8 +23,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>BTech in Electrronics, CCOEW Pune</li>
+        <li>10th Grade, Kendriya Vidyalaya</li>
       </ul>
     ),
   },
@@ -57,12 +57,12 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating
-            interactive and responsive web applications. I have experience
-            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
-            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
-            looking to expand my knowledge and skill set. I am a team player and
-            I am excited to work with others to create amazing applications.
+          I&apos;m Aishwarya, a recent BTech graduate from CCOEW, Pune, 
+          specializing in Electronics and Telecommunication Engineering 
+          with a focus on Machine Learning, Deep Learning, and Full-Stack Web Development. 
+          I&apos;m actively seeking roles in AI/ML fields to apply my 
+          skills in a practical, impact-driven environment. 
+          No experience yet, but eager to start filling that section of my resume! Let&apos;s connect!
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
