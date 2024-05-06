@@ -105,3 +105,5 @@ jobs:
         envkey_RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
         envkey_FROM_EMAIL: ${{ secrets.FROM_EMAIL }}
         file_name: .env.local
+        fail_on_empty: false
+        sort_keys: false
