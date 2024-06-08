@@ -7,57 +7,48 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "https://aishme.github.io/portfolio/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "GrocerEase V1 - Grocery Store Web Application",
+    description: "Simple E-commerce Application using VanillaJS and Flask.",
+    image: "https://aishme.github.io/portfolio/projects/web/project_1_web.png",
+    tag: ["All", "Web", "Capstone"],
+    gitUrl: "https://github.com/AishMe/GrocerEase_WebApp",
+    previewUrl: "https://drive.google.com/file/d/1uDC5Ub83c5uiirMaylfxSRxQixhsMrLy/view?usp=sharing",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "https://aishme.github.io/portfolio/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "GrocerEase V2 - Advanced Grocery Store Application",
+    description: "E-commerce Web App with Advanced Features using VueJS and Flask.",
+    image: "https://aishme.github.io/portfolio/projects/web/project_2_web.png",
+    tag: ["All", "Web", "Capstone"],
+    gitUrl: "https://github.com/AishMe/GrocerEase-V2",
+    previewUrl: "https://drive.google.com/file/d/1U045JJPvvOH5mtJzt917zYeAs0FVWBBn/view?usp=share_link",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "https://aishme.github.io/portfolio/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Digital Hearing Aid System",
+    description: "A Digital Signal Processing Project using Wavelet Filters.",
+    image: "https://aishme.github.io/portfolio/projects/3.png",
+    tag: ["All", "Capstone"],
+    gitUrl: "https://github.com/AishMe/Digital-Hearing-Aid-System",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "https://aishme.github.io/portfolio/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    title: "Language Translator Web App",
+    description: "Deep Learning Project using Transformer, english to french.",
+    image: "https://aishme.github.io/portfolio/projects/ML_DL/project_4_DL.png",
+    tag: ["All", "Capstone", "AI/ML/DL"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "https://aishme.github.io/portfolio/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "https://aishme.github.io/portfolio/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Dog Breed Prediction Web App",
+    description: "Used CNN to predict the breed of a dog image uploaded by the user.",
+    image: "https://aishme.github.io/portfolio/projects/ML_DL/project_5_ML.png",
+    tag: ["All", "Personal", "AI/ML/DL"],
+    gitUrl: "https://github.com/AishMe/dog-breed-prediction",
+    previewUrl: "https://aishme-dogbreedpred.streamlit.app/",
   },
 ];
 
@@ -92,13 +83,23 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
+          name="Personal"
+          isSelected={tag === "Personal"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Capstone"
+          isSelected={tag === "Capstone"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
           name="Web"
           isSelected={tag === "Web"}
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="AI/ML/DL"
+          isSelected={tag === "AI/ML/DL"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
