@@ -23,8 +23,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>BTech in Electrronics, CCOEW Pune</li>
-        <li>10th Grade, Kendriya Vidyalaya</li>
+        <li>BTech in Electronics, CCOEW Pune</li>
+        <li>BS in Data Science and Applications, IIT Madras</li>
       </ul>
     ),
   },
@@ -33,8 +33,11 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>AI for Everyone</li>
+        <li>Google Cybersecurity</li>
+        <li>Google Business Intelligence</li>
+        <li>Google Data Analytics</li>
+        <li>Google IT Automation with Python</li>
       </ul>
     ),
   },
